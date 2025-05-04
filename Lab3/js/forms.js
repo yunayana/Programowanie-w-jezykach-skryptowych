@@ -1,51 +1,58 @@
-function checkForm() {
-  let isValid = true;
 
+function validateName() {
   const name = document.getElementById("contactName").value.trim();
-  const email = document.getElementById("contactEmail").value.trim();
-  const message = document.getElementById("contactMessage").value.trim();
-
-  document.getElementById("errorName").classList.add("d-none");
-  document.getElementById("errorEmail").classList.add("d-none");
-  document.getElementById("errorMessage").classList.add("d-none");
-
-  document.getElementById("contactName").classList.remove("is-invalid", "is-valid");
-  document.getElementById("contactEmail").classList.remove("is-invalid", "is-valid");
-  document.getElementById("contactMessage").classList.remove("is-invalid", "is-valid");
+  const nameGroup = document.getElementById("nameGroup");
+  const errorName = document.getElementById("errorName");
 
   if (name === "") {
-    document.getElementById("errorName").classList.remove("d-none");
-    document.getElementById("contactName").classList.add("is-invalid");
-    isValid = false;
+    errorName.classList.remove("d-none");
+    nameGroup.classList.add("is-invalid");
+    nameGroup.classList.remove("is-valid");
   } else {
-    document.getElementById("contactName").classList.add("is-valid");
+    errorName.classList.add("d-none");
+    nameGroup.classList.remove("is-invalid");
+    nameGroup.classList.add("is-valid");
   }
+}
 
 
+function validateEmail() {
+  const email = document.getElementById("contactEmail").value.trim();
+  const emailGroup = document.getElementById("emailGroup");
+  const errorEmail = document.getElementById("errorEmail");
+  
   if (email === "") {
-    document.getElementById("errorEmail").innerHTML = "Podanie adresu email jest wymagane!";
-    document.getElementById("errorEmail").classList.remove("d-none");
-    document.getElementById("contactEmail").classList.add("is-invalid");
-    isValid = false;
+    errorEmail.innerHTML = "Podanie adresu email jest wymagane!";
+    errorEmail.classList.remove("d-none");
+    emailGroup.classList.add("is-invalid");
+    emailGroup.classList.remove("is-valid");
   } else {
     const regex = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4}$/;
     if (!regex.test(email)) {
-      document.getElementById("errorEmail").innerHTML = "Podano nieprawidłowy adres email!";
-      document.getElementById("errorEmail").classList.remove("d-none");
-      document.getElementById("contactEmail").classList.add("is-invalid");
-      isValid = false;
+      errorEmail.innerHTML = "Podano nieprawidłowy adres email!";
+      errorEmail.classList.remove("d-none");
+      emailGroup.classList.add("is-invalid");
+      emailGroup.classList.remove("is-valid");
     } else {
-      document.getElementById("contactEmail").classList.add("is-valid");
+      errorEmail.classList.add("d-none");
+      emailGroup.classList.remove("is-invalid");
+      emailGroup.classList.add("is-valid");
     }
   }
+}
 
+function validateMessage() {
+  const message = document.getElementById("contactMessage").value.trim();
+  const messageGroup = document.getElementById("messageGroup");
+  const errorMessage = document.getElementById("errorMessage");
+  
   if (message === "" || message.length > 250) {
-    document.getElementById("errorMessage").classList.remove("d-none");
-    document.getElementById("contactMessage").classList.add("is-invalid");
-    isValid = false;
+    errorMessage.classList.remove("d-none");
+    messageGroup.classList.add("is-invalid");
+    messageGroup.classList.remove("is-valid");
   } else {
-    document.getElementById("contactMessage").classList.add("is-valid");
+    errorMessage.classList.add("d-none");
+    messageGroup.classList.remove("is-invalid");
+    messageGroup.classList.add("is-valid");
   }
-
-  return isValid;
 }
