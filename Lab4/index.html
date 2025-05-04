@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Zad 1-4</h1>
+
+        <h3>Cala tablica:</h3>
+        <ul id="arrayDisplay" class="list-group">
+        </ul>
+
+        <h3 class="mt-4">Po modyfikacjach:</h3>
+        <ul id="modifiedArrayDisplay" class="list-group">
+        </ul>
+
+        <h3 class="mt-4">Nowa Tablica:</h3>
+        <ul id="newArrayDisplay" class="list-group">
+        </ul>
+
+        <div id="firstLastElements" class="mt-4">
+            <p id="firstElement">Pierwszy element: </p>
+            <p id="lastElement">Ostatni element: </p>
+        </div>
+
+        <div id="elementCountSection" class="mt-4">
+            <p id="arrayCount"></p>
+            <p id="modifiedArrayCount"></p>
+            <p id="newArrayCount"></p>
+        </div>
+
+        <div id="main-page" class="mt-4">
+            <p id="first-paragraph">Pierwszy akapit</p>
+            <p id="second-paragraph">Drugi akapit</p>
+        </div>
+
+        <button onclick="showData()" class="btn btn-primary mt-4">Pokaż dane z akapitów</button>
+
+    </div>
+
+    <script>
+        let tablica = ['Kot', 'Kotek', 'Kicia', 'Koszak'];
+
+        function displayArray(array, elementId) {
+            const list = document.getElementById(elementId);
+            list.innerHTML = ''; 
+            array.forEach(item => {
+                const li = document.createElement('li');
+                li.classList.add('list-group-item');
+                li.textContent = item;
+                list.appendChild(li);
+            });
+        }
+
+        // wyswietlanie tablicy poczatkowej
+        displayArray(tablica, 'arrayDisplay');
+
+        //modyfikowanie ostatniego elementu tablicy
+        tablica[tablica.length - 1] = 'Nowa wartość';
+
+        // nowy element na koncu poprzez przypisanie do indeksu
+        tablica[5] = 'nowy6';
+
+        tablica.push('nowy8', 'nowy9', 'nowy10', 'nowy11');
+
+        tablica.unshift('nowy12', 'nowy13');
+
+        displayArray(tablica, 'modifiedArrayDisplay');
+
+        let nowaTablica = ['Widelec1', 'Widelec2', 'Widelec3', 'Widelec4'];
+
+       
+        document.getElementById('firstElement').innerHTML = 'Pierwszy element: <strong>' + nowaTablica[0] + '</strong>';
+        document.getElementById('lastElement').innerHTML = 'Ostatni element: <strong>' + nowaTablica[nowaTablica.length - 1] + '</strong>';
+
+        nowaTablica.unshift('Widelec0');
+
+        document.getElementById('firstElement').innerHTML = 'Pierwszy element po dodaniu: <strong>' + nowaTablica[0] + '</strong>';
+
+        displayArray(nowaTablica, 'newArrayDisplay');
+
+        document.getElementById('arrayCount').innerHTML = 'Liczba elementów w tablicy (arrayDisplay): ' + tablica.length + ' (elementy: ' + tablica.join(', ') + ')';
+        document.getElementById('modifiedArrayCount').innerHTML = 'Liczba elementów w tablicy po modyfikacjach (modifiedArrayDisplay): ' + tablica.length + ' (elementy: ' + tablica.join(', ') + ')';
+        document.getElementById('newArrayCount').innerHTML = 'Liczba elementów w nowej tablicy (newArrayDisplay): ' + nowaTablica.length + ' (elementy: ' + nowaTablica.join(', ') + ')';
+
+        let firstParagraphData = tablica[0];
+        let secondParagraphData = nowaTablica[0];
+        document.getElementById('first-paragraph').innerHTML = "Pierwszy akapit: " + firstParagraphData;
+        document.getElementById('second-paragraph').innerHTML = "Drugi akapit: " + secondParagraphData;
+
+        let i = 0;
+        let halfLength = Math.floor(tablica.length / 2); 
+        let result = '';
+        while (i < halfLength) {
+            result += tablica[i] + ' ';
+            i++;
+        }
+        console.log("Pętla while: ", result);
+
+        result = '';
+        for (let i = 0; i < halfLength; i++) {
+            result += nowaTablica[i] + ' ';
+        }
+        console.log("Pętla for: ", result);
+
+        function showData() {
+            let firstParagraphContent = document.getElementById('first-paragraph').innerHTML;
+            let secondParagraphContent = document.getElementById('second-paragraph').innerHTML;
+            alert('Dane z akapitów: ' + firstParagraphContent + ' i ' + secondParagraphContent);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
