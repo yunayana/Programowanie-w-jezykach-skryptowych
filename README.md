@@ -4,7 +4,7 @@
 - [Lab 2](https://github.com/yunayana/Programowanie-w-jezykach-skryptowych/tree/main/Lab2) – Strona o wodnych liliach z używaniem Bootstrap
 -  [Lab 3](https://github.com/yunayana/Programowanie-w-jezykach-skryptowych/tree/main/Lab3) – Strona z formularzem
 -  [Lab 4](https://github.com/yunayana/Programowanie-w-jezykach-skryptowych/tree/main/Lab4) – Strona z tablicami oraz quiz
-
+-  [Lab 5](https://github.com/yunayana/Programowanie-w-jezykach-skryptowych/tree/main/Lab5) – Strona z quizem o sylvanian families 
 ## Link Do Hostingu
 [Link](https://yunayana.github.io/Programowanie-w-jezykach-skryptowych/)
 
