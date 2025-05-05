@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz o Sylvanian Families</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff9e6;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        #Projekt1 {
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: #ffeaf2;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d16ba5;
+        }
+
+        #question {
+            font-size: 1.3rem;
+            color: #5c5470;
+        }
+
+        input[type="text"] {
+            margin-top: 15px;
+            border: 2px solid #ffb6c1;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #ffc1cc;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .incorrect {
+            color: red;
+        }
+
+        .text-warning {
+            color: orange;
+        }
+
+        .toy-image {
+            width: 100px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+        #finalScore {
+            font-size: 1.5rem;
+            color: #d16ba5;
+            animation: zoomIn 0.5s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+<div id="Projekt1" class="text-center">
+    <h1>Quiz o Sylvanian Families</h1>
+    <img src="img1.jpg" class="toy-image" alt="Zabawka 1">
+    <img src="img2.jpg" class="toy-image" alt="Zabawka 2">
+
+    <p id="question">Pytanie pojawi się tutaj</p>
+    <input type="text" class="form-control" id="answer" placeholder="Wpisz odpowiedź">
+    <button class="btn btn-lg" id="nextButton">Następne pytanie</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    let score = 0;
+    let q = 0;
+
+    const questions = [
+        ['Jakie rodziny zwierząt z Sylvanian Families są najstarsze?', 'Króliczki i koty'],
+        ['Kiedy zostały wprowadzone na rynek pierwsze zabawki?', '1985 rok'],
+        ['Jakie zmiany przeszły figurki rodziny króliczków w pierwszych edycjach Sylvanian Families?', 'Ubrań i rysy twarzy'],
+        ['Czy istnieją rodziny Sylvanian Families, które zostały wycofane ze sprzedaży i stały się poszukiwane przez kolekcjonerów?', 'Pandy, bobry'],
+        ['Jakie rodziny Sylvanian Families mają najwięcej akcesoriów, takich jak meble czy pojazdy?', 'Króliczki, koty'],
+        ['Jakie rodziny Sylvanian Families miały specjalne wydania na rocznice marki, np. z okazji 30-lecia?', 'Króliczki'],
+        ['Jakie rodziny Sylvanian Families są obecnie najtrudniejsze do znalezienia na rynku wtórnym?', 'Wilki, borsuki'],
+        ['Czy wśród Sylvanian Families istnieje rodzina, która była dostępna tylko w Japonii, a teraz jest poszukiwaną rzadkością na rynku globalnym?', 'Panda']
+    ];
+
+    function loadQuestion() {
+        document.getElementById('question').textContent = questions[q][0];
+        document.getElementById('answer').value = '';
+        document.getElementById('result').textContent = '';
+        document.getElementById('answer').disabled = false;
+        document.getElementById('answer').focus();
+    }
+
+    function testQuestion() {
+        const answerInput = document.getElementById('answer');
+        const answer = answerInput.value.trim();
+        const correct = questions[q][1];
+
+        if (answer === '') {
+            document.getElementById('result').textContent = 'Proszę wpisać odpowiedź!';
+            document.getElementById('result').className = 'text-warning';
+            return;
+        }
+
+        if (answer.toLowerCase() === correct.toLowerCase()) {
+            score++;
+            document.getElementById('result').textContent = 'Poprawna odpowiedź!';
+            document.getElementById('result').className = 'correct';
+        } else {
+            document.getElementById('result').textContent = `Błędna odpowiedź. Poprawna to: ${correct}`;
+            document.getElementById('result').className = 'incorrect';
+        }
+
+        q++;
+
+        if (q < questions.length) {
+            setTimeout(loadQuestion, 1500);
+        } else {
+            setTimeout(endQuiz, 1500);
+        }
+    }
+
+    function endQuiz() {
+        document.getElementById('question').textContent = 'Koniec quizu!';
+        document.getElementById('answer').disabled = true;
+        document.getElementById('nextButton').disabled = true;
+
+        document.getElementById('result').innerHTML = `<div id="finalScore">Zdobyłeś ${score} z ${questions.length} punktów!</div>`;
+
+        const restartBtn = document.createElement('button');
+        restartBtn.textContent = 'Zagraj ponownie';
+        restartBtn.className = 'btn btn-lg mt-3';
+        restartBtn.style.backgroundColor = '#d1c4e9';
+        restartBtn.style.color = '#4a148c';
+        restartBtn.style.borderRadius = '10px';
+        restartBtn.onclick = restartQuiz;
+
+        document.getElementById('result').appendChild(restartBtn);
+    }
+
+    function restartQuiz() {
+        score = 0;
+        q = 0;
+        document.getElementById('nextButton').disabled = false;
+        loadQuestion();
+    }
+
+    document.getElementById('nextButton').addEventListener('click', testQuestion);
+
+    window.onload = loadQuestion;
+</script>
+</body>
+</html>
