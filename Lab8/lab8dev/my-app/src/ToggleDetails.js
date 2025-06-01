@@ -8,7 +8,7 @@ function ToggleDetails() {
             <button onClick={() => setShow(prev => !prev)}>
                 {show ? 'Ukryj szczegóły' : 'Pokaż szczegóły'}
             </button>
-            {show && <p>To są szczegóły, które można ukryć lub pokazać.</p>}
+            {show && <p>Ale się najem po zajęciach</p>}
         </div>
     );
 }

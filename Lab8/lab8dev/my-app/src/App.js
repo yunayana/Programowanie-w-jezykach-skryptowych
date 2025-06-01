@@ -1,3 +1,4 @@
+import './App.css';
 import React, { useState } from 'react';
 import ToggleDetails from './ToggleDetails';
 import ScoreDisplay from './ScoreDisplay';
