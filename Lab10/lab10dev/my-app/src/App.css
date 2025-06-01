@@ -1,0 +1,77 @@
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf6f7;
+  color: #3b0a0c;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #ffeef0, #fff8f9);
+  box-shadow: 0 0 12px rgba(136, 0, 27, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #a0002f;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 0 #ffd6de;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #6d0015;
+  border-bottom: 2px dashed #ffccd5;
+  padding-bottom: 0.25rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e0a1ab;
+  margin: 2rem 0;
+}
+
+button {
+  background-color: #a0002f;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7a0023;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #d99ba3;
+  border-radius: 6px;
+  margin: 0.25rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  border-color: #a0002f;
+  outline: none;
+}
+
+p {
+  background-color: #fff0f2;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #d15266;
+  border-radius: 4px;
+}
