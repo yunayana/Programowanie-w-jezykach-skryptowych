@@ -1,0 +1,75 @@
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 100vh;          
+  background: linear-gradient(135deg, #dceefb 0%, #a1c4fd 100%);
+  font-family: 'Georgia', serif;
+  color: #2e3a59;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App-header {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 24px rgba(46, 58, 89, 0.2);
+  border-radius: 16px;
+  padding: 40px 50px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-weight: 600;
+  color: #1f2a44;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px #c9d6ff;
+}
+
+button {
+  background-color: #ff7e67; 
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(255, 126, 103, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Georgia', serif;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #e56b56;
+  box-shadow: 0 8px 24px rgba(229, 107, 86, 0.7);
+}
+
+button:active {
+  background-color: #c85545;
+  box-shadow: inset 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #3b4965;
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    padding: 25px 20px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 16px 0;
+  }
+}
