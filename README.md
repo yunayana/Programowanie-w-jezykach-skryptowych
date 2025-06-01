@@ -28,7 +28,7 @@ Poniżej znajdują się linki do poszczególnych laboratoriów wraz z krótkim o
 - [Lab 9](https://github.com/yunayana/Programowanie-w-jezykach-skryptowych/tree/main/Lab9)  
   Różnica w referencjach funkcji w React oraz zastosowanie useCallback dla optymalizacji renderowania komponentów.
 
--[Lab10](https://github.com/yunayana/Programowanie-w-jezykach-skryptowych/tree/main/Lab10)
+- [Lab10](https://github.com/yunayana/Programowanie-w-jezykach-skryptowych/tree/main/Lab10)
 Użycie hooków: useRef, useMemo, useReducer, useContext oraz useLayoutEffect wraz z prostym stylowaniem komponentów.
   
 
