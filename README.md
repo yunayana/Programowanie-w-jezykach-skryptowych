@@ -1,3 +1,4 @@
+
 # Yana Trotsenko – Grupa 1, 21232
 
 ## Spis zadań laboratoryjnych
@@ -28,9 +29,8 @@ Poniżej znajdują się linki do poszczególnych laboratoriów wraz z krótkim o
 - [Lab 9](https://github.com/yunayana/Programowanie-w-jezykach-skryptowych/tree/main/Lab9)  
   Różnica w referencjach funkcji w React oraz zastosowanie useCallback dla optymalizacji renderowania komponentów.
 
-- [Lab10](https://github.com/yunayana/Programowanie-w-jezykach-skryptowych/tree/main/Lab10)
-Użycie hooków: useRef, useMemo, useReducer, useContext oraz useLayoutEffect wraz z prostym stylowaniem komponentów.
-  
+- [Lab10](https://github.com/yunayana/Programowanie-w-jezykach-skryptowych/tree/main/Lab10)  
+  Użycie hooków: useRef, useMemo, useReducer, useContext oraz useLayoutEffect wraz z prostym stylowaniem komponentów.
 
 ---
 
@@ -41,5 +41,81 @@ Projekt jest opublikowany i dostępny pod adresem:
 
 ---
 
+# Opis projektu
+
+**Nazwa projektu:** System śledzenia postępów czytelniczych z możliwością oceniania, recenzowania i udostępniania
+
+Projekt to aplikacja/webowa strona inspirowana estetyką i stylem kultowego anime *SoulEater*. Charakterystyczna, dynamiczna i lekko mroczna stylistyka przenika cały interfejs, nadając mu oryginalny, przyciągający wzrok charakter. Wszystkie logotypy i ikony zostały wykonane ręcznie, co dodaje projektowi unikalności i artystycznego wyrazu.
+
+---
+
+## Cel projektu
+
+Celem jest stworzenie wygodnego i funkcjonalnego systemu do zarządzania własną biblioteką czytelniczą, pozwalającego użytkownikom śledzić postępy w czytaniu, oceniać książki, dodawać recenzje, tworzyć notatki oraz dzielić się opiniami z innymi czytelnikami. W przyszłości planowana jest rozbudowa o pełnoprawną czytelniczą aplikację (e-czytelnię), a nie tylko moduł recenzji.
+
+---
+
+## Kluczowe funkcje (wersja początkowa)
+
+1. **Rejestracja i logowanie użytkownika**  
+   - Tworzenie konta oraz logowanie, m.in. przez e-mail lub konto Google  
+   - Edycja profilu użytkownika  
+
+2. **Zarządzanie listami książek**  
+   - Dodawanie książek do trzech list: *Chcę przeczytać*, *Czytam*, *Przeczytane*  
+   - Przenoszenie książek pomiędzy listami  
+
+3. **Śledzenie postępów czytania**  
+   - Wprowadzanie liczby przeczytanych stron lub procentowego postępu  
+   - Wyświetlanie aktualnego stanu czytania  
+
+4. **Wyszukiwanie książek**  
+   - Integracja z Google Books API lub innym źródłem danych  
+   - Wyszukiwanie według tytułu, autora lub ISBN  
+   - Dodawanie wybranych książek do biblioteki użytkownika  
+
+5. **Oceny i recenzje**  
+   - Ocena książek w skali 1–5  
+   - Dodawanie krótkich recenzji  
+   - Przeglądanie opinii innych użytkowników  
+
+6. **Zakładki i notatki**  
+   - Dodawanie zakładek do konkretnych stron książek  
+   - Tworzenie własnych notatek  
+
+7. **Profil użytkownika**  
+   - Przegląd list książek z podziałem na statusy  
+   - Statystyki czytelnicze (np. liczba przeczytanych książek, średnia ocen)  
+
+8. **Funkcje społecznościowe (opcjonalnie)**  
+   - Obserwowanie innych użytkowników  
+   - Podgląd ich aktywności czytelniczej  
+   - Komentowanie recenzji  
+
+---
+
+## Dodatkowe funkcje w planach
+
+- Tryb ciemny/jasny (dark mode)  
+- Rekomendacje książek na podstawie ocen i preferencji użytkownika  
+- Powiadomienia, np. przypomnienia o niedokończonych lekturach  
+
+---
+
+## Schemat działania
+
+```
+[Użytkownik] → [Wyszukaj książkę] → [Google Books API]
+                                     ↓
+                        [Wybierz książkę] → [Zapisz dane w bazie]
+                                                       ↓
+                               [Zarządzanie ocenami, notatkami, postępem]
+```
+
+---
+
+**Projekt stawia na połączenie funkcjonalności z unikalną estetyką SoulEater oraz indywidualnym stylem graficznym, aby czytanie i zarządzanie książkami było nie tylko użyteczne, ale i przyjemne wizualnie.**
+
+---
 
 *Yana Trotsenko, Grupa 1, nr indeksu: 21232*
