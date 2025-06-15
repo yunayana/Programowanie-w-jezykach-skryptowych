@@ -45,13 +45,13 @@ Projekt jest opublikowany i dostępny pod adresem:
 
 **Nazwa projektu:** System śledzenia postępów czytelniczych z możliwością oceniania, recenzowania i udostępniania
 
-Projekt to aplikacja/webowa strona inspirowana estetyką i stylem kultowego anime *SoulEater*. Charakterystyczna, dynamiczna i lekko mroczna stylistyka przenika cały interfejs, nadając mu oryginalny, przyciągający wzrok charakter. Wszystkie logotypy i ikony zostały wykonane ręcznie, co dodaje projektowi unikalności i artystycznego wyrazu.
+Projekt to aplikacja/webowa strona inspirowana estetyką i stylem kultowego anime *SoulEater*. Charakterystyczna, dynamiczna i lekko mroczna stylistyka przenika cały interfejs, nadając mu oryginalny, przyciągający wzrok charakter. Wszystkie logotypy zostały wykonane ręcznie.
 
 ---
 
 ## Cel projektu
 
-Celem jest stworzenie wygodnego i funkcjonalnego systemu do zarządzania własną biblioteką czytelniczą, pozwalającego użytkownikom śledzić postępy w czytaniu, oceniać książki, dodawać recenzje, tworzyć notatki oraz dzielić się opiniami z innymi czytelnikami. W przyszłości planowana jest rozbudowa o pełnoprawną czytelniczą aplikację (e-czytelnię), a nie tylko moduł recenzji.
+Celem jest stworzenie wygodnego i funkcjonalnego systemu do zarządzania własną biblioteką czytelniczą, pozwalającego użytkownikom śledzić postępy w czytaniu, oceniać książki, dodawać recenzje, tworzyć notatki oraz dzielić się opiniami z innymi czytelnikami.
 
 ---
 
@@ -70,7 +70,7 @@ Celem jest stworzenie wygodnego i funkcjonalnego systemu do zarządzania własn�
    - Wyświetlanie aktualnego stanu czytania  
 
 4. **Wyszukiwanie książek**  
-   - Integracja z Google Books API lub innym źródłem danych  
+   - Integracja z Google Books API 
    - Wyszukiwanie według tytułu, autora lub ISBN  
    - Dodawanie wybranych książek do biblioteki użytkownika  
 
@@ -79,8 +79,7 @@ Celem jest stworzenie wygodnego i funkcjonalnego systemu do zarządzania własn�
    - Dodawanie krótkich recenzji  
    - Przeglądanie opinii innych użytkowników  
 
-6. **Zakładki i notatki**  
-   - Dodawanie zakładek do konkretnych stron książek  
+6. **Zakładki i notatki**   
    - Tworzenie własnych notatek  
 
 7. **Profil użytkownika**  
@@ -90,15 +89,9 @@ Celem jest stworzenie wygodnego i funkcjonalnego systemu do zarządzania własn�
 8. **Funkcje społecznościowe (opcjonalnie)**  
    - Obserwowanie innych użytkowników  
    - Podgląd ich aktywności czytelniczej  
-   - Komentowanie recenzji  
 
 ---
 
-## Dodatkowe funkcje w planach
-
-- Tryb ciemny/jasny (dark mode)  
-- Rekomendacje książek na podstawie ocen i preferencji użytkownika  
-- Powiadomienia, np. przypomnienia o niedokończonych lekturach  
 
 ---
 
