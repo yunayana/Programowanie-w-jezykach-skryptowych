@@ -1,0 +1,439 @@
+{
+  "users": [
+    {
+      "id": 1749679811297,
+      "username": "Lera",
+      "password": "lera2005",
+      "following": [],
+      "avatar": "ava1.png",
+      "books": {
+        "wantToRead": [
+          {
+            "id": "tNMkDwAAQBAJ",
+            "title": "Pan Lodowego Ogrodu Tom 1",
+            "authors": [
+              "Jarosław Grzędowicz"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=tNMkDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "totalPages": 337,
+            "pagesRead": 0,
+            "review": null,
+            "notes": []
+          },
+          {
+            "id": "V1sUEAAAQBAJ",
+            "title": "Полночный тигр",
+            "authors": [
+              "Свати Тирдхала"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=V1sUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "totalPages": 392,
+            "pagesRead": 0,
+            "review": null,
+            "notes": []
+          }
+        ],
+        "reading": [
+          {
+            "id": "4MXXngEACAAJ",
+            "title": "Zabić drozda",
+            "authors": [
+              "Harper Lee"
+            ],
+            "thumbnail": "",
+            "totalPages": 389,
+            "pagesRead": 300,
+            "review": null,
+            "notes": []
+          },
+          {
+            "id": "NuynzgEACAAJ",
+            "title": "Król darknetu",
+            "authors": [
+              "Nick Bilton"
+            ],
+            "thumbnail": "",
+            "totalPages": 200,
+            "pagesRead": 11,
+            "review": null,
+            "notes": []
+          },
+          {
+            "id": "boJWNwAACAAJ",
+            "title": "Ślepa wierzba i śpiąca kobieta",
+            "authors": [
+              "Haruki Murakami"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=boJWNwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "totalPages": 510,
+            "pagesRead": 0,
+            "review": null,
+            "notes": []
+          },
+          {
+            "id": "4UasDgAAQBAJ",
+            "title": "Медленной шлюпкой в Китай (сборник)",
+            "authors": [
+              "Харуки Мураками"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=4UasDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "totalPages": 161,
+            "pagesRead": 0,
+            "review": null,
+            "notes": []
+          }
+        ],
+        "read": [
+          {
+            "id": "4kTjzwEACAAJ",
+            "title": "Rok 1984",
+            "authors": [
+              "George Orwell"
+            ],
+            "thumbnail": "",
+            "totalPages": 211,
+            "pagesRead": 211,
+            "review": null,
+            "notes": []
+          },
+          {
+            "id": "J3vvAwAAQBAJ",
+            "title": "Записки у изголовья",
+            "authors": [
+              "Сэй-Сёнагон"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=J3vvAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "totalPages": 610,
+            "pagesRead": 0,
+            "review": null,
+            "notes": []
+          }
+        ]
+      },
+      "notes": {},
+      "reviews": {},
+      "bio": "Książki to mój wehikuł do światów, gdzie rzeczywistość miesza się z marzeniem.\nUwielbiam historie, które płyną wolno, jak łódź na dalekich rzekach, pełne tajemnic i niedopowiedzeń. Przemierzam miasta i kraje, spotykam duchy przeszłości i cienie własnych myśli. To lektura dla tych, którzy szukają nie tylko fabuły, ale i duszy — z daleka od pośpiechu, w blasku subtelnej magii."
+    },
+    {
+      "id": 1749933458868,
+      "username": "BigBrainRot69",
+      "password": "oleg",
+      "following": [
+        1749936332400
+      ],
+      "avatar": "ava2.png",
+      "bio": "Czytam tam, gdzie rzeczywistość pęka.\nSzukam historii, które coś odsłaniają — czasem prawdę o świecie, czasem o ludziach, a czasem o mnie. Lubię, gdy literatura jest jak lód, który trzaska pod stopami: Zabić drozda przypomina mi, co to znaczy być człowiekiem, Król darknetu — jak łatwo człowiek się rozpada, a Pan Lodowego Ogrodu — że nawet w mrozie można iść dalej. Nie uciekam od ciemnych tematów. Z ciekawości. Z potrzeby. Z pasji.",
+      "books": {
+        "wantToRead": [
+          {
+            "id": "tNMkDwAAQBAJ",
+            "title": "Pan Lodowego Ogrodu Tom 1",
+            "authors": [
+              "Jarosław Grzędowicz"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=tNMkDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "totalPages": 337,
+            "pagesRead": 0,
+            "review": null,
+            "notes": []
+          }
+        ],
+        "reading": [
+          {
+            "id": "4MXXngEACAAJ",
+            "title": "Zabić drozda",
+            "authors": [
+              "Harper Lee"
+            ],
+            "thumbnail": "",
+            "totalPages": 389,
+            "pagesRead": 300,
+            "review": null,
+            "notes": []
+          },
+          {
+            "id": "NuynzgEACAAJ",
+            "title": "Król darknetu",
+            "authors": [
+              "Nick Bilton"
+            ],
+            "thumbnail": "",
+            "totalPages": 200,
+            "pagesRead": 11,
+            "review": null,
+            "notes": []
+          }
+        ],
+        "read": [
+          {
+            "id": "4kTjzwEACAAJ",
+            "title": "Rok 1984",
+            "authors": [
+              "George Orwell"
+            ],
+            "thumbnail": "",
+            "totalPages": 211,
+            "pagesRead": 211,
+            "review": null,
+            "notes": []
+          }
+        ]
+      },
+      "notes": {},
+      "reviews": {
+        "tNMkDwAAQBAJ": {
+          "review": "„Król darknetu” to porywający reportaż o jednym z najbardziej niezwykłych przestępców XXI wieku – Rossie Ulbrichtcie, twórcy Silk Road, internetowego czarnego rynku ukrytego w zakamarkach darknetu.\n\nNick Bilton z kronikarską precyzją i pisarską swobodą opowiada historię chłopaka z dobrego domu, który z idealisty zmienia się w cyfrowego barona narkotykowego. To opowieść o wolności, paranoi, ideologii libertariańskiej, a przede wszystkim – o cienkiej granicy między ideą a obsesją.\n\nKsiążka czyta się jak thriller, ale jest w 100% oparta na faktach. Autor nie tylko pokazuje rozwój Silk Roadu, ale też odsłania kulisy śledztwa, walki FBI i DEA oraz upadku cyfrowego imperium, które wymknęło się spod kontroli nawet jego twórcy.",
+          "rating": 4
+        }
+      }
+    },
+    {
+      "id": 1749936332400,
+      "username": "YunaYana",
+      "password": "autor",
+      "following": [],
+      "avatar": "ava3.png",
+      "books": {
+        "wantToRead": [
+          {
+            "id": "Jw5wMQAACAAJ",
+            "title": "Divy nochi",
+            "authors": [
+              "I︠U︡riĭ Vynnychuk"
+            ],
+            "thumbnail": "",
+            "totalPages": 246,
+            "pagesRead": 0,
+            "review": null,
+            "notes": []
+          },
+          {
+            "id": "PpFkEQAAQBAJ",
+            "title": "Бійцівський клуб",
+            "authors": [
+              "Чак Поланік"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=PpFkEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "totalPages": 222,
+            "pagesRead": 0,
+            "review": null,
+            "notes": []
+          }
+        ],
+        "reading": [
+          {
+            "id": "8a6G7yXCl2MC",
+            "title": "In The Miso Soup",
+            "authors": [
+              "Ryu Murakami"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=8a6G7yXCl2MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "totalPages": 131,
+            "pagesRead": 100,
+            "review": null,
+            "notes": []
+          },
+          {
+            "id": "8UJrDwAAQBAJ",
+            "title": "Star",
+            "authors": [
+              "Yukio Mishima"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=8UJrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "totalPages": 57,
+            "pagesRead": 17,
+            "review": null,
+            "notes": []
+          }
+        ],
+        "read": [
+          {
+            "id": "QKzpwAEACAAJ",
+            "title": "Almost Transparent Blue",
+            "authors": [
+              "村上龍"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=QKzpwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+            "totalPages": 126,
+            "pagesRead": 126,
+            "review": null,
+            "notes": []
+          },
+          {
+            "id": "g9yrDwAAQBAJ",
+            "title": "Тошнота",
+            "authors": [
+              "Жан-Поль Сартр"
+            ],
+            "thumbnail": "http://books.google.com/books/content?id=g9yrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            "totalPages": 254,
+            "pagesRead": 254,
+            "review": null,
+            "notes": []
+          }
+        ]
+      },
+      "notes": {
+        "g9yrDwAAQBAJ": [
+          "op"
+        ],
+        "QKzpwAEACAAJ": [
+          "gay"
+        ],
+        "Jw5wMQAACAAJ": [
+          "«Отже, коли не хочеш мати більше клопотів із законом, то намагайся не пхати носа туди, де тебе не просять. Виконуй свою роботу і не задавай дурних питань. Що менше знаєш, то довше проживеш. Такий закон природи.»"
+        ],
+        "PpFkEQAAQBAJ": [
+          "“You are not your job, you’re not how much money you have… You’re not the car you drive… You are all singing, all dancing crap of the world.”"
+        ],
+        "8a6G7yXCl2MC": [
+          "“People who love horror films are people with boring lives... when a really scary movie is over, you're reassured to see that you're still alive and the world still exists as it did before. That's the real reason we have horror films – they act as shock absorbers...”",
+          "“All Americans have something lonely about them. I don't know what the reason might be… American loneliness is a completely different creature from anything we experience in this country.”"
+        ]
+      },
+      "reviews": {
+        "Jw5wMQAACAAJ": {
+          "review": "bardzo fajne",
+          "rating": 4
+        },
+        "g9yrDwAAQBAJ": {
+          "review": "super",
+          "rating": 4
+        },
+        "QKzpwAEACAAJ": {
+          "review": "kindof",
+          "rating": 1
+        },
+        "8a6G7yXCl2MC": {
+          "review": "Mroczny, duszny thriller psychologiczny osadzony w nocnym Tokio. Kenji, młody przewodnik, poznaje dziwacznego Amerykanina Franka – ich wspólna podróż szybko zamienia się w spiralę paranoi i przemocy. Murakami obnaża samotność i pustkę nowoczesnego świata z zimną precyzją. Krwawy, ale nie tylko dla efektu – zostawia z niepokojem i pytaniami o granice człowieczeństwa.",
+          "rating": 5
+        }
+      },
+      "bio": "Entered the app like entering Zen — with no purpose, but full clarity.\nI don’t read to find answers — I read to ask better questions.\nSometimes I devour a novel in one night; other times I stare at a single page for a week — depends on the moon phase and whether Kafka has let me go.\nFavorite genre? Anything with a hint of conspiracy."
+    }
+  ],
+  "currentUser": {
+    "id": 1749936332400,
+    "username": "YunaYana",
+    "password": "autor",
+    "following": [],
+    "avatar": "ava3.png",
+    "books": {
+      "wantToRead": [
+        {
+          "id": "Jw5wMQAACAAJ",
+          "title": "Divy nochi",
+          "authors": [
+            "I︠U︡riĭ Vynnychuk"
+          ],
+          "thumbnail": "",
+          "totalPages": 246,
+          "pagesRead": 0,
+          "review": null,
+          "notes": []
+        },
+        {
+          "id": "PpFkEQAAQBAJ",
+          "title": "Бійцівський клуб",
+          "authors": [
+            "Чак Поланік"
+          ],
+          "thumbnail": "http://books.google.com/books/content?id=PpFkEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "totalPages": 222,
+          "pagesRead": 0,
+          "review": null,
+          "notes": []
+        }
+      ],
+      "reading": [
+        {
+          "id": "8a6G7yXCl2MC",
+          "title": "In The Miso Soup",
+          "authors": [
+            "Ryu Murakami"
+          ],
+          "thumbnail": "http://books.google.com/books/content?id=8a6G7yXCl2MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "totalPages": 131,
+          "pagesRead": 100,
+          "review": null,
+          "notes": []
+        },
+        {
+          "id": "8UJrDwAAQBAJ",
+          "title": "Star",
+          "authors": [
+            "Yukio Mishima"
+          ],
+          "thumbnail": "http://books.google.com/books/content?id=8UJrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "totalPages": 57,
+          "pagesRead": 17,
+          "review": null,
+          "notes": []
+        }
+      ],
+      "read": [
+        {
+          "id": "QKzpwAEACAAJ",
+          "title": "Almost Transparent Blue",
+          "authors": [
+            "村上龍"
+          ],
+          "thumbnail": "http://books.google.com/books/content?id=QKzpwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+          "totalPages": 126,
+          "pagesRead": 126,
+          "review": null,
+          "notes": []
+        },
+        {
+          "id": "g9yrDwAAQBAJ",
+          "title": "Тошнота",
+          "authors": [
+            "Жан-Поль Сартр"
+          ],
+          "thumbnail": "http://books.google.com/books/content?id=g9yrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "totalPages": 254,
+          "pagesRead": 254,
+          "review": null,
+          "notes": []
+        }
+      ]
+    },
+    "notes": {
+      "g9yrDwAAQBAJ": [
+        "op"
+      ],
+      "QKzpwAEACAAJ": [
+        "gay"
+      ],
+      "Jw5wMQAACAAJ": [
+        "«Отже, коли не хочеш мати більше клопотів із законом, то намагайся не пхати носа туди, де тебе не просять. Виконуй свою роботу і не задавай дурних питань. Що менше знаєш, то довше проживеш. Такий закон природи.»"
+      ],
+      "PpFkEQAAQBAJ": [
+        "“You are not your job, you’re not how much money you have… You’re not the car you drive… You are all singing, all dancing crap of the world.”"
+      ],
+      "8a6G7yXCl2MC": [
+        "“People who love horror films are people with boring lives... when a really scary movie is over, you're reassured to see that you're still alive and the world still exists as it did before. That's the real reason we have horror films – they act as shock absorbers...”",
+        "“All Americans have something lonely about them. I don't know what the reason might be… American loneliness is a completely different creature from anything we experience in this country.”"
+      ]
+    },
+    "reviews": {
+      "Jw5wMQAACAAJ": {
+        "review": "bardzo fajne",
+        "rating": 4
+      },
+      "g9yrDwAAQBAJ": {
+        "review": "super",
+        "rating": 4
+      },
+      "QKzpwAEACAAJ": {
+        "review": "kindof",
+        "rating": 1
+      },
+      "8a6G7yXCl2MC": {
+        "review": "Mroczny, duszny thriller psychologiczny osadzony w nocnym Tokio. Kenji, młody przewodnik, poznaje dziwacznego Amerykanina Franka – ich wspólna podróż szybko zamienia się w spiralę paranoi i przemocy. Murakami obnaża samotność i pustkę nowoczesnego świata z zimną precyzją. Krwawy, ale nie tylko dla efektu – zostawia z niepokojem i pytaniami o granice człowieczeństwa.",
+        "rating": 5
+      }
+    },
+    "bio": "Entered the app like entering Zen — with no purpose, but full clarity.\nI don’t read to find answers — I read to ask better questions.\nSometimes I devour a novel in one night; other times I stare at a single page for a week — depends on the moon phase and whether Kafka has let me go.\nFavorite genre? Anything with a hint of conspiracy."
+  }
+}

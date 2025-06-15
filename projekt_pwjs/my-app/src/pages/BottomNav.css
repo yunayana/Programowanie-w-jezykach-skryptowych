@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #f4f2fa;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.header-title {
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 2.5rem !important;
+  color: #8049df;
+  text-align: center;
+  padding: 1rem 0;
+  letter-spacing: 1px;
+}
+
+/* Glassmorphic bottom nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(170, 149, 206, 0.3);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -4px 20px rgba(170, 149, 206, 0.15);
+  z-index: 100;
+  transition: background 0.3s ease;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #888;
+  transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.bottom-nav button.active,
+.bottom-nav button:hover {
+  color: #a37fd7;
+  transform: translateY(-6px);
+}
+
+.bottom-nav button:not(:hover):not(.active) {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .bottom-nav button {
+    font-size: 1.3rem;
+  }
+
+  .header-title {
+    font-size: 2rem !important;
+  }
+}

@@ -1,0 +1,98 @@
+/* AuthPages.css */
+
+.auth-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background: #f9f8ff; /* bardzo jasny fiolet */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(120, 86, 224, 0.2); /* delikatny cień fioletowy */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a3f7a; /* ciemny fioletowy tekst */
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #6c54b8;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="password"] {
+  padding: 12px 15px;
+  border: 2px solid #a398e8; /* jasny fiolet */
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.auth-container input[type="text"]:focus,
+.auth-container input[type="password"]:focus {
+  border-color: #4e3fbf; /* ciemniejszy fiolet */
+  outline: none;
+  box-shadow: 0 0 8px rgba(78, 63, 191, 0.3);
+}
+
+.auth-container button[type="submit"] {
+  padding: 12px;
+  background-color: #5f4bb6;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-container button[type="submit"]:hover {
+  background-color: #493d99;
+}
+
+.auth-container p {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #6e5ba9;
+}
+
+.auth-container p button {
+  background: none;
+  border: none;
+  color: #7b68ee;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.auth-container p button:hover {
+  color: #4e3fbf;
+}
+
+.auth-container p.error {
+  color: #d9534f; /* czerwień */
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Jeśli chcesz, możesz dodać styl dla <details> jako wspólny dla obu */
+.auth-details {
+  background: #e6e0ff;
+  padding: 15px;
+  border-radius: 8px;
+  color: #4a3f7a;
+  margin-top: 20px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.95rem;
+}

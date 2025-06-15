@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+  overflow: hidden;
+
+  transform: translateY(0);
+  transition: transform 1.2s ease-in-out;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.intro-overlay.hide {
+  transform: translateY(-100%);
+}
+
+.shutter-edge {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  width: 80px;
+  height: 6px;
+  background: white;
+  border-radius: 6px 6px 0 0;
+  z-index: 3;
+  transition: transform 1.2s ease-in-out, opacity 1.2s ease-in-out;
+  opacity: 1;
+}
+
+.intro-overlay.hide .shutter-edge {
+  transform: translateX(-50%) translateY(-40px);
+  opacity: 0;
+}
+
+.content-container {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 2rem;
+}
+
+.soul-reader-reveal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.3rem;
+  z-index: 10;
+  font-family: 'Orbitron', monospace;
+  font-size: 45px;
+  color: white;
+  pointer-events: none;
+  height: 50px; 
+  overflow: visible;
+}
+
+.reveal-char {
+  opacity: 0;
+  animation: fallFixFall 14s ease-in-out forwards;
+ color: white;
+}
+
+/* анімація */
+@keyframes fallFixFall {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(600px); /* фікс знизу */
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(600px); /* там же затримка внизу */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(800px); /* падає далі вниз і зникає */
+  }
+}
+
+

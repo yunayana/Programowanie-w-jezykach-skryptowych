@@ -1,0 +1,27 @@
+.matrix-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.matrix-text {
+  position: absolute;
+  white-space: nowrap;
+  color: rgba(232, 236, 238, 0.822);
+  font-family: monospace;
+  font-size: 16px;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}

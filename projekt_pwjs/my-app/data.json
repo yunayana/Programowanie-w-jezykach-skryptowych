@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1749931147186,
+      "username": "yana",
+      "password": "opaopa",
+      "following": [],
+      "avatar": "ava2.png"
+    },
+    {
+      "id": 1749931193985,
+      "username": "oleg",
+      "password": "oleg",
+      "following": [],
+      "avatar": "ava4.png"
+    },
+    {
+      "id": 1749931477206,
+      "username": "opa",
+      "password": "opa",
+      "following": [],
+      "avatar": "ava4.png"
+    },
+    {
+      "id": 1749931949550,
+      "username": "oleh",
+      "password": "228",
+      "following": [],
+      "avatar": "ava1.png"
+    }
+  ],
+  "currentUser": {
+    "id": 1749931949550,
+    "username": "oleh",
+    "password": "228",
+    "following": [],
+    "avatar": "ava1.png"
+  }
+}

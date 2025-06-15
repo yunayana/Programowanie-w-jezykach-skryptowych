@@ -1,0 +1,208 @@
+.profile-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Helvetica", sans-serif;
+  color: #333;
+}
+
+.profile-page h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.avatar {
+  border: none;
+  margin-bottom: 1rem;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0; /* brak zaokrąglenia */
+}
+
+.avatar-small {
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+button {
+  margin-left: 10px;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+button:hover {
+  filter: brightness(0.85);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.profile-page ul li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* User books & reviews */
+.user-books-reviews {
+  margin-top: 3rem;
+  border-top: 1px solid #ddd;
+  padding-top: 2rem;
+}
+
+.user-books-reviews h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.user-books-reviews h4 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.user-books-reviews p {
+  font-size: 0.9rem;
+  background-color: #f8f8f8;
+  padding: 0.6rem;
+  margin: 0.4rem 0;
+  border-radius: 6px;
+}
+
+/* BooksShelf style embedded */
+.books-shelf {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.book-tile {
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.book-tile.selected {
+  border: 2px solid #3897f0;
+  border-radius: 8px;
+}
+
+.book-cover {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.no-thumbnail {
+  width: 100%;
+  height: 140px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: #555;
+  border-radius: 4px;
+  user-select: none;
+}
+
+/* Buttons specific classes */
+
+button.follow {
+  background-color: #7b68ee; /* fiolet */
+}
+
+button.unfollow {
+  background-color: #a9a9a9; /* szary */
+}
+
+button.logout {
+  background-color: #6a5acd; /* ciemny fiolet */
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+button.view-books {
+  background-color: #9370db; /* jasny fiolet */
+}
+
+button.btn-edit {
+  background-color: #7b68ee;
+  margin-top: 0.5rem;
+}
+
+button.btn-save {
+  background-color: #4caf50; /* zielony */
+  margin-right: 0.5rem;
+}
+
+button.btn-cancel {
+  background-color: #f44336; /* czerwony */
+}
+
+/* Profile header and layout */
+
+.profile-header {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-body {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-content {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  border-left: 1px solid #ddd;
+  padding-left: 1rem;
+}
+
+.sidebar ul li {
+  justify-content: space-between;
+}
+
+.sidebar button {
+  margin-left: 5px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+/* Textarea */
+
+textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}

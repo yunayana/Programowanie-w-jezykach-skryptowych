@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+/* === Book Grid Section === */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* === Book Card (jak na regale) === */
+.book-card {
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease;
+  height: 100%;
+}
+
+.book-card:hover {
+  transform: translateY(-3px);
+}
+
+/* === Miniatura książki === */
+.book-thumbnail-full {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(161, 138, 255, 0.2);
+  margin-bottom: 0.8rem;
+}
+
+/* === Tytuł książki === */
+.book-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0.5rem 0 0.3rem;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* === Autorzy === */
+.text-sm {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.7rem;
+  min-height: 2rem;
+}
+
+/* === Grupa przycisków === */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+.button-group button {
+  padding: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* === Styl kolorów przycisków === */
+.bg-yellow-400 {
+  background-color: #facc15;
+}
+.bg-yellow-400:hover {
+  background-color: #eab308;
+}
+
+.bg-blue-400 {
+  background-color: #60a5fa;
+}
+.bg-blue-400:hover {
+  background-color: #3b82f6;
+}
+
+.bg-green-500 {
+  background-color: #22c55e;
+}
+.bg-green-500:hover {
+  background-color: #16a34a;
+}
+
+/* === Sekcje list === */
+.section-subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-top: 2rem;
+  border-left: 4px solid #a18aff;
+  padding-left: 0.75rem;
+}
+
+/* === Pusty stan === */
+.empty-state-text {
+  font-style: italic;
+  color: #888;
+  padding: 1rem 0;
+}
+
+.booklist-section .section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #874be9;
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px;
+}
+

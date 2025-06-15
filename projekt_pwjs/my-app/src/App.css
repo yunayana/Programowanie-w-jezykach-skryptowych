@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  background: rgb(145, 141, 141); 
+  font-family: sans-serif;
+  min-height: 100%;
+  overflow-y: auto;
+}

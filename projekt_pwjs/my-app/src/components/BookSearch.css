@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+:root {
+  --purple: #7e3ff2;
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(126, 63, 242, 0.2);
+  --text-color: #2b2b2b;
+  --placeholder-color: #999;
+}
+
+.book-search {
+  backdrop-filter: blur(10px);
+  background-color: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 2rem;
+  border-radius: 16px;
+  color: var(--text-color);
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 8px 30px rgba(126, 63, 242, 0.1);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.book-search h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--purple);
+}
+
+.search-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-controls input {
+  flex-grow: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  background-color: rgba(255, 255, 255, 0.6);
+  color: var(--text-color);
+  font-size: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.search-controls input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.search-controls button {
+  background: transparent;
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-controls button:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.2rem;
+  text-align: center;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(126, 63, 242, 0.1);
+}
+
+.book-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(126, 63, 242, 0.2);
+}
+
+.book-item img {
+  width: 110px;
+  height: auto;
+  margin: 0 auto 0.75rem;
+  border-radius: 6px;
+}
+
+.no-thumbnail {
+  width: 110px;
+  height: 160px;
+  background-color: #eee;
+  margin: 0 auto 0.75rem;
+  border-radius: 6px;
+}
+
+.book-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  min-height: 2.5em;
+}
+
+.book-item p {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 1rem;
+  min-height: 1.8em;
+}
+
+.book-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.book-controls select {
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--text-color);
+  border: 1px solid #ccc;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(4px);
+}
+
+.book-controls button {
+  background-color: transparent;
+  border: 1px solid var(--purple);
+  color: var(--purple);
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.book-controls button:hover {
+  background-color: var(--purple);
+  color: #fff;
+}
